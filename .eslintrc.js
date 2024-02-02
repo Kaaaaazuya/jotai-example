@@ -14,6 +14,7 @@ module.exports = {
     browser: true,
   },
   parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint'],
   parserOptions: {
     sourceType: 'module',
     ecmaVersion: 'latest',
@@ -28,8 +29,9 @@ module.exports = {
     'react/display-name': 'error',
     'react/no-children-prop': 'error',
     'react/no-danger-with-children': 'error',
-    'react/jsx-no-bind': 'error',
+    'react/jsx-no-bind': 'off',
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
+    'no-unused-vars': 'off',
   },
 }
